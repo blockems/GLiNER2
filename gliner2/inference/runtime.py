@@ -1222,6 +1222,7 @@ class ExtractorRuntimeMixin:
         format_results: bool = True,
         include_confidence: bool = False,
         include_spans: bool = False,
+        overlap_policy: Optional[str] = None,
     ) -> Dict:
         """Extract entities from a long document with overlapping word chunks."""
         schema = self.create_schema().entities(entity_types)
